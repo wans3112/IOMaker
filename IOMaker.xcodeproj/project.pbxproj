@@ -20,7 +20,18 @@
 		A8490DFF16F99B82008E2A43 /* IOMakerViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = A8490DFD16F99B82008E2A43 /* IOMakerViewController.xib */; };
 /* End PBXBuildFile section */
 
+/* Begin PBXContainerItemProxy section */
+		A81D777A16F99E8200F16D84 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = A81D777316F99E8200F16D84 /* SinaWeiBoSDK.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = E6ABCC1914988423008E0A37;
+			remoteInfo = SinaWeiBoSDK;
+		};
+/* End PBXContainerItemProxy section */
+
 /* Begin PBXFileReference section */
+		A81D777316F99E8200F16D84 /* SinaWeiBoSDK.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = SinaWeiBoSDK.xcodeproj; path = sinalibs/SinaWeiBoSDK/SinaWeiBoSDK.xcodeproj; sourceTree = "<group>"; };
 		A8490DDE16F99B81008E2A43 /* IOMaker.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = IOMaker.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		A8490DE216F99B81008E2A43 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
 		A8490DE416F99B81008E2A43 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
@@ -53,9 +64,18 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		A81D777416F99E8200F16D84 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				A81D777B16F99E8200F16D84 /* libSinaWeiBoSDK.a */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
 		A8490DD316F99B81008E2A43 = {
 			isa = PBXGroup;
 			children = (
+				A81D777316F99E8200F16D84 /* SinaWeiBoSDK.xcodeproj */,
 				A8490DE816F99B81008E2A43 /* IOMaker */,
 				A8490DE116F99B81008E2A43 /* Frameworks */,
 				A8490DDF16F99B81008E2A43 /* Products */,
@@ -147,12 +167,28 @@
 			mainGroup = A8490DD316F99B81008E2A43;
 			productRefGroup = A8490DDF16F99B81008E2A43 /* Products */;
 			projectDirPath = "";
+			projectReferences = (
+				{
+					ProductGroup = A81D777416F99E8200F16D84 /* Products */;
+					ProjectRef = A81D777316F99E8200F16D84 /* SinaWeiBoSDK.xcodeproj */;
+				},
+			);
 			projectRoot = "";
 			targets = (
 				A8490DDD16F99B81008E2A43 /* IOMaker */,
 			);
 		};
 /* End PBXProject section */
+
+/* Begin PBXReferenceProxy section */
+		A81D777B16F99E8200F16D84 /* libSinaWeiBoSDK.a */ = {
+			isa = PBXReferenceProxy;
+			fileType = archive.ar;
+			path = libSinaWeiBoSDK.a;
+			remoteRef = A81D777A16F99E8200F16D84 /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+/* End PBXReferenceProxy section */
 
 /* Begin PBXResourcesBuildPhase section */
 		A8490DDC16F99B81008E2A43 /* Resources */ = {
@@ -292,6 +328,7 @@
 				A8490E0416F99B82008E2A43 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
